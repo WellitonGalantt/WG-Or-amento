@@ -1,0 +1,69 @@
+
+
+.add-budget-more-infos-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.add-budget-more-infos-box hr{
+  height: 180px;
+}
+
+hr{
+  margin: 1rem 0;
+}
+
+.resume-btn-box{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.resume-budget-btn{
+  font-weight: 600;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 5px 20px;
+  border: solid 2px #f7f7f7;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.resume-budget-btn:hover{
+  background-color: #f7f7f7;
+  color: #132D46;
+  transform: scale(1.03);
+}
+
+.title-budget-list{
+  text-align: center;
+}
+
+.title-budget-list.print{
+  display: none;
+  text-align: center;
+}
+
+@media print {
+
+  *{
+    color: #132D46;
+  }
+
+  .title-budget-list{
+    display: none;
+  }
+  
+  .title-budget-list.print{
+    display: block;
+  }
+
+  .resume-budget-btn{
+    display: none;
+  }
+}

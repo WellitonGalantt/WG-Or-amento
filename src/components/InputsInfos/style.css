@@ -1,0 +1,68 @@
+
+.provider-service-infos-box,
+.contracter-service-infos-box{
+  flex: 1;
+}
+
+.provider-service-infos-box label,
+.contracter-service-infos-box label{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 1rem;
+}
+
+.provider-service-infos-box label input,
+.contracter-service-infos-box label input{
+  color: #f7f7f7;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: solid 2px #f7f7f7;
+  background: none;
+  transition: all 200ms ease-in-out;
+  text-transform: capitalize;
+}
+.provider-service-infos-box label input:focus,
+.contracter-service-infos-box label input:focus{
+  outline: none;
+  border-color: #01C38E;
+  box-shadow: 0 0 4px #01C38E;
+}
+
+.provider-service-infos-box label input::-webkit-inner-spin-button,
+.contracter-service-infos-box label input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.name-print,
+.number-print,
+.adress-print{
+  display: none;
+  word-break: break-all;
+}
+
+@media print {
+  .name-print,
+  .number-print,
+  .adress-print{
+    display: block;
+    word-break: break-all;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  .provider-service-infos-box label,
+  .contracter-service-infos-box label{
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  .provider-service-infos-box label input,
+  .contracter-service-infos-box label input{
+    display: none;
+  }
+}

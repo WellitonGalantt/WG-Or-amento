@@ -1,0 +1,25 @@
+
+.home-container-todo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #132D46;
+}
+
+.container-pages-contents{
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-pages-contents{
+    width: 60%;
+  }
+}
+
+@media print {
+  .container-pages-contents{
+    width: 90%;
+  }
+}

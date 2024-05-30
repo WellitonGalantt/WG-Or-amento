@@ -1,0 +1,38 @@
+
+
+.bud-get-item-info{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: solid 1px #f7f7f7;
+  padding: 10px 0;
+}
+
+.content-budget-item{
+  flex: 6;
+  display: flex;
+  padding: 5px;
+}
+
+.price-budget-item,
+.qntd-budget-item{
+  flex: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.bud-get-item-info button{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 1px #f7f7f7;
+  border-radius: 5px;
+}
